@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <!-- ============================================
+       ANATOLAB3D - Peças Anatômicas 3D
+       Página Principal (Home)
+       ============================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anatolab3D — Piezas anatómicas impresas en 3D de alta precisión para estudiantes de ciencias de la salud. Modelos educacionales de cráneo, clavícula, fémur y más.">
+  <meta name="keywords" content="anatomía 3D, piezas anatómicas, impresión 3D, huesos 3D, educación médica, cráneo 3D, fémur 3D">
+  <meta name="author" content="Anatolab3D">
+
+  <title>Anatolab3D — Piezas Anatómicas 3D de Alta Precisión</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦴</text></svg>">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ==========================================
+       DISCLAIMER BAR - Aviso educacional
+       ========================================== -->
+  <div class="disclaimer-bar">
+    <div class="container">
+      <i class="bi bi-info-circle"></i> Producto educacional — Modelos anatómicos de estudio, no aptos para uso clínico.
+    </div>
+  </div>
+
+  <!-- ==========================================
+       NAVBAR - Navegación principal fija
+       ========================================== -->
+  <nav class="navbar navbar-expand-lg navbar-osteo fixed-top" style="top: 0;" id="mainNavbar">
+    <div class="container">
+      <!-- Logo / Marca -->
+      <a class="navbar-brand navbar-brand-osteo" href="#home">
+        <img src="assets/images/logo/logo_banner_fundo.png" alt="Anatolab3D" class="navbar-logo">
+      </a>
+
+      <!-- Botón mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links de navegación -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalogo.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ventajas">Ventajas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonios">Testimonios</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       HERO SECTION - Banner principal
+       ========================================== -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Columna de texto -->
+        <div class="col-lg-6">
+          <div class="hero-content">
+            <span class="hero-badge">
+              <i class="bi bi-printer-fill"></i> Impresión 3D Profesional
+            </span>
+            <h1 class="hero-title">
+              Piezas Anatómicas 3D de <span class="accent">Alta Precisión</span>
+            </h1>
+            <p class="hero-subtitle">
+              Nuestros modelos anatómicos se desarrollan a partir de datos reales de imagen médica, utilizando estudios de tomografía computarizada (CT). Mediante procesos de segmentación y reconstrucción tridimensional, se obtienen representaciones detalladas de las estructuras óseas. 
+              
+              <br><br>
+              El resultado son piezas confiables, didácticas y basadas en datos reales, ideales para estudiantes del área de la salud que buscan una comprensión más visual y aplicada de la anatomía humana.
+
+            </p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="catalogo.html" class="btn btn-accent">
+                <i class="bi bi-bag-check-fill"></i> Ver Productos
+              </a>
+              <a href="https://wa.me/5491125498647?text=Hola!%20Quiero%20más%20info%20sobre%20las%20piezas%20anatómicas%203D" target="_blank" class="btn btn-outline-light-custom">
+                  <i class="bi bi-whatsapp"></i> Consultar
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Columna de imagen -->
+        <div class="col-lg-6 d-none d-lg-block">
+          <div class="hero-img-wrapper text-center">
+            <!-- Carousel de 4 imagens rotativas -->
+            <div class="hero-carousel" id="heroCarousel">
+              <div class="hero-carousel-slide active">
+                <img src="assets/images/skull.png" alt="Cráneo 3D" style="max-height: 420px;">
+              </div>
+              <div class="hero-carousel-slide">
+                <img src="assets/images/clavicle.png" alt="Clavícula 3D" style="max-height: 420px;">
+              </div>
+              <div class="hero-carousel-slide">
+                <img src="assets/images/cranio1.jpeg" alt="Clavícula 3D" style="max-height: 420px;">
+              </div>
+              <div class="hero-carousel-slide">
+                <img src="assets/images/cranio2.jpeg" alt="Clavícula 3D" style="max-height: 420px;">
+              </div>
+              <div class="hero-carousel-slide">
+                <img src="assets/images/femur.png" alt="Fémur 3D" style="max-height: 420px;">
+              </div>
+              <div class="hero-carousel-slide">
+                <img src="assets/images/spine.png" alt="Columna Vertebral 3D" style="max-height: 420px;">
+              </div>
+            </div>
+            <!-- Dots de navegação -->
+            <div class="hero-carousel-dots" id="heroCarouselDots">
+              <button class="hero-dot active" data-slide="0"></button>
+              <button class="hero-dot" data-slide="1"></button>
+              <button class="hero-dot" data-slide="2"></button>
+              <button class="hero-dot" data-slide="3"></button>
+              <button class="hero-dot" data-slide="4"></button>
+              <button class="hero-dot" data-slide="5"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TRUST BAR - Barra de confianza
+       ========================================== -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="row align-items-center justify-content-center text-center">
+        <div class="col-6 col-md-3">
+          <div class="trust-item justify-content-center">
+            <i class="bi bi-shield-check"></i>
+            <span>Pago Seguro</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="trust-item justify-content-center">
+            <i class="bi bi-truck"></i>
+            <span>Envíos a toda Argentina</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="trust-item justify-content-center">
+            <i class="bi bi-printer"></i>
+            <span>Impresión 3D Premium</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="trust-item justify-content-center">
+            <i class="bi bi-mortarboard"></i>
+            <span>Uso Educacional</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       PRODUCTOS - Catálogo de productos
+       ========================================== -->
+  <section class="section-padding" id="productos">
+    <div class="container">
+      <!-- Título de sección -->
+      <div class="text-center mb-5 reveal">
+        <span class="hero-badge" style="background: rgba(0,212,170,0.1); border-color: rgba(0,212,170,0.2);">
+          <i class="bi bi-grid-3x3-gap-fill"></i> Catálogo
+        </span>
+        <h2 class="section-title mt-3">Nuestros Productos</h2>
+        <p class="section-subtitle">
+          Piezas anatómicas impresas en 3D con máximo detalle y precisión. Perfectas para el estudio y la práctica.
+        </p>
+      </div>
+
+      <div class="text-center mt-3">
+      <div class="mt-3 d-flex justify-content-center">
+        <span class="hero-badge promo-badge">
+          <i class="bi bi-fire"></i> PROMO
+      </span>
+</div>
+      <!-- Grid de productos -->
+      <div class="row g-4">
+
+        <!-- PRODUCTO 1: Cráneo -->
+        <div class="col-md-6 col-lg-3 reveal" data-product-id="skull">
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <span class="product-badge">Popular</span>
+              <img src="assets/images/skull.png" alt="Cráneo Humano 3D">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Osteología</span>
+              <h3 class="product-name">Cráneo Humano</h3>
+              <p class="product-description">
+                Modelo detallado del cráneo humano adulto con suturas visibles. Escala 1:1.
+              </p>
+              <div class="stock-info"></div>
+              <p class="product-price" data-price-id="skull"></p>
+              <div class="product-actions">
+                <button class="btn btn-mercadopago btn-buy">
+                  <i class="bi bi-shield-lock-fill"></i> Comprar
+                </button>
+                <button class="btn btn-whatsapp btn-wp">
+                  <i class="bi bi-whatsapp"></i> WhatsApp
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 2: Clavícula -->
+        <div class="col-md-6 col-lg-3 reveal" data-product-id="clavicle">
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <span class="product-badge">Nuevo</span>
+              <img src="assets/images/clavicle.png" alt="Clavícula 3D">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Osteología</span>
+              <h3 class="product-name">Clavícula</h3>
+              <p class="product-description">
+                Réplica precisa de la clavícula humana con detalles de inserción muscular.
+              </p>
+              <div class="stock-info"></div>
+              <p class="product-price" data-price-id="clavicle"></p>
+              <div class="product-actions">
+                <button class="btn btn-mercadopago btn-buy">
+                  <i class="bi bi-shield-lock-fill"></i> Comprar
+                </button>
+                <button class="btn btn-whatsapp btn-wp">
+                  <i class="bi bi-whatsapp"></i> WhatsApp
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 3: Fémur -->
+        <div class="col-md-6 col-lg-3 reveal" data-product-id="femur">
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <span class="product-badge">Top Venta</span>
+              <img src="assets/images/femur.png" alt="Fémur 3D">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Osteología</span>
+              <h3 class="product-name">Fémur</h3>
+              <p class="product-description">
+                Fémur humano escala real con trocánteres y cabeza femoral detallada.
+              </p>
+              <div class="stock-info"></div>
+              <p class="product-price" data-price-id="femur"></p>
+              <div class="product-actions">
+                <button class="btn btn-mercadopago btn-buy">
+                  <i class="bi bi-shield-lock-fill"></i> Comprar
+                </button>
+                <button class="btn btn-whatsapp btn-wp">
+                  <i class="bi bi-whatsapp"></i> WhatsApp
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 4: Columna Vertebral (SOLD OUT) -->
+        <div class="col-md-6 col-lg-3 reveal" data-product-id="spine">
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <span class="product-badge">Premium</span>
+              <img src="assets/images/spine.png" alt="Columna Vertebral 3D">
+            </div>
+            <div class="product-body">
+              <span class="product-category">Osteología</span>
+              <h3 class="product-name">Columna Vertebral</h3>
+              <p class="product-description">
+                Columna vertebral completa con vértebras cervicales, torácicas, lumbares y sacro.
+              </p>
+              <div class="stock-info"></div>
+              <p class="product-price" data-price-id="spine"></p>
+              <div class="product-actions">
+                <button class="btn btn-mercadopago btn-buy">
+                  <i class="bi bi-shield-lock-fill"></i> Comprar
+                </button>
+                <button class="btn btn-whatsapp btn-wp">
+                  <i class="bi bi-whatsapp"></i> WhatsApp
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row -->
+    <!-- BOTÃO CATÁLOGO -->
+      <div class="text-center mt-5">
+        <a href="catalogo.html" class="btn btn-catalogo">
+          <i class="bi bi-fire"></i> Ver Catálogo
+        </a>
+      </div>
+ <!-- FIM BOTÃO CATÁLOGO -->
+     </div> <!-- fechamento /container -->
+    </section>
+
+  <!-- ==========================================
+       POR QUÉ COMPRARNOS - Ventajas
+       ========================================== -->
+  <section class="section-padding section-gray" id="ventajas">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="hero-badge" style="background: rgba(0,212,170,0.1); border-color: rgba(0,212,170,0.2);">
+          <i class="bi bi-star-fill"></i> Ventajas
+        </span>
+        <h2 class="section-title mt-3">¿Por qué elegir Anatolab3D?</h2>
+        <p class="section-subtitle">
+          Nos especializamos en crear modelos anatómicos de la más alta calidad para tu formación profesional.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="why-card">
+            <div class="why-icon"><i class="bi bi-bullseye"></i></div>
+            <h5>Alta Precisión</h5>
+            <p>Detalles anatómicos exactos con tecnología de impresión de última generación.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="why-card">
+            <div class="why-icon"><i class="bi bi-mortarboard-fill"></i></div>
+            <h5>Uso Educativo</h5>
+            <p>Diseñados específicamente para estudiantes y profesionales de la salud.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="why-card">
+            <div class="why-icon"><i class="bi bi-shield-lock-fill"></i></div>
+            <h5>Pago Seguro</h5>
+            <p>Comprá con confianza a través de Mercado Pago con protección al comprador.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="why-card">
+            <div class="why-icon"><i class="bi bi-truck"></i></div>
+            <h5>Envío Nacional</h5>
+            <p>Enviamos a toda Argentina con embalaje seguro y seguimiento del paquete.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TESTIMONIOS - Reseñas de clientes
+       ========================================== -->
+  <section class="section-dark section-padding" id="testimonios">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="hero-badge">
+          <i class="bi bi-chat-quote-fill"></i> Testimonios
+        </span>
+        <h2 class="section-title mt-3" style="color: var(--white);">Lo que dicen nuestros clientes</h2>
+        <p class="section-subtitle">
+          Estudiantes y profesionales confían en Anatolab3D para su formación.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Testimonio 1 -->
+        <div class="col-md-4 reveal">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-text">
+              "Increíble la calidad del cráneo. Cada sutura está perfectamente marcada. 
+              Me ayudó muchísimo para preparar mis parciales de anatomía."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">ML</div>
+              <div>
+                <div class="testimonial-name">María López</div>
+                <div class="testimonial-role">Estudiante de Medicina — UBA</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="col-md-4 reveal">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-text">
+              "Compré el fémur y la clavícula. La atención por WhatsApp fue excelente 
+              y el envío llegó en perfectas condiciones. ¡Totalmente recomendable!"
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">JR</div>
+              <div>
+                <div class="testimonial-name">Juan Rodríguez</div>
+                <div class="testimonial-role">Estudiante de Kinesiología — UNLP</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonio 3 -->
+        <div class="col-md-4 reveal">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <p class="testimonial-text">
+              "Como docente, uso estos modelos en mis clases. Los estudiantes pueden 
+              manipular las piezas libremente, lo cual mejora mucho el aprendizaje."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">CA</div>
+              <div>
+                <div class="testimonial-name">Dr. Carlos Almada</div>
+                <div class="testimonial-role">Docente de Anatomía — UNC</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONFIANZA - Sellos de seguridad
+       ========================================== -->
+  <section class="section-padding" id="confianza">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="hero-badge" style="background: rgba(0,212,170,0.1); border-color: rgba(0,212,170,0.2);">
+          <i class="bi bi-patch-check-fill"></i> Confianza
+        </span>
+        <h2 class="section-title mt-3">Comprá con Total Seguridad</h2>
+        <p class="section-subtitle">Tu compra está protegida en todo momento.</p>
+      </div>
+
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-4 col-lg-2 reveal">
+          <div class="trust-seal">
+            <i class="bi bi-shield-lock-fill d-block"></i>
+            <h6>Pago Seguro</h6>
+            <p>Vía Mercado Pago</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 reveal">
+          <div class="trust-seal">
+            <i class="bi bi-printer-fill d-block"></i>
+            <h6>Impresión 3D</h6>
+            <p>Alta calidad PLA+</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 reveal">
+          <div class="trust-seal">
+            <i class="bi bi-truck d-block"></i>
+            <h6>Envío Nacional</h6>
+            <p>Toda Argentina</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 reveal">
+          <div class="trust-seal">
+            <i class="bi bi-mortarboard-fill d-block"></i>
+            <h6>Educacional</h6>
+            <p>Uso académico</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 reveal">
+          <div class="trust-seal">
+            <i class="bi bi-whatsapp d-block"></i>
+            <h6>Soporte Directo</h6>
+            <p>Atención personalizada</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 reveal">
+          <div class="trust-seal">
+            <i class="bi bi-box-seam-fill d-block"></i>
+            <h6>Embalaje Seguro</h6>
+            <p>Protección total</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CTA - Llamada a la acción final
+       ========================================== -->
+  <section class="cta-section">
+    <div class="container reveal">
+      <h2>¿Listo para mejorar tu estudio?</h2>
+      <p>Obtené tus piezas anatómicas 3D y llevá tu aprendizaje al siguiente nivel.</p>
+      <div class="d-flex gap-3 justify-content-center flex-wrap">
+        <a href="catalogo.html" class="btn btn-cta-dark">
+          <i class="bi bi-bag-check-fill"></i> Ver Catálogo
+        </a>
+        <a href="https://wa.me/5491125498647?text=Hola!%20Quiero%20comprar%20piezas%20anatómicas%203D" target="_blank" class="btn btn-cta-dark" style="background: #25D366;">
+          <i class="bi bi-whatsapp"></i> Hablar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer-osteo">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Columna marca -->
+        <div class="col-lg-4">
+          <img src="assets/images/logo/logo_banner_fundo.png" alt="Anatolab3D" class="footer-logo">
+          <p class="footer-text">
+            Piezas anatómicas impresas en 3D de alta precisión para estudiantes y profesionales 
+            de la salud. Modelos educacionales de calidad premium.
+          </p>
+          <p class="footer-text" style="font-size: 0.8rem;">
+            <i class="bi bi-info-circle"></i> Producto educacional — No apto para uso clínico.
+          </p>
+        </div>
+
+        <!-- Columna navegación -->
+        <div class="col-lg-2 col-md-4">
+          <h6 class="footer-title">Navegación</h6>
+          <ul class="footer-links">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="catalogo.html">Productos</a></li>
+            <li><a href="#ventajas">Ventajas</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna productos -->
+        <div class="col-lg-2 col-md-4">
+          <h6 class="footer-title">Productos</h6>
+          <ul class="footer-links">
+            <li><a href="#productos">Cráneo Humano</a></li>
+            <li><a href="#productos">Clavícula</a></li>
+            <li><a href="#productos">Fémur</a></li>
+            <li><a href="#productos">Columna Vertebral</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna contacto -->
+        <div class="col-lg-4 col-md-4">
+          <h6 class="footer-title">Contacto</h6>
+          <ul class="footer-links">
+            <li>
+              <a href="https://wa.me/5491125498647?text=Hola!%20Quiero%20más%20info%20sobre%20las%20piezas%20anatómicas%203D"
+                target="_blank"
+                rel="noopener noreferrer">
+                <i class="bi bi-whatsapp"></i> WhatsApp
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/anato.lab.3d/" target="_blank">
+                <i class="bi bi-instagram"></i> @anatolab3d
+              </a>
+            </li>
+          </ul>
+
+          <!-- MERCADO PAGO FORMAS DE PAGAMENTO -->
+          <div class="mt-3">
+            <img src="assets/images/mercado-pago.jpg" 
+                 alt="Medios de pago Mercado Pago" 
+                 style="max-width: 100%; border-radius: 8px; opacity: 0.8;"
+                 onerror="this.onerror=null; this.src='https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.92/mercadopago/logo__small@2x.png'; this.style.maxHeight='40px';">
+          </div>
+          <!-- FIM MERCADO PAGO FORMAS DE PAGAMENTO -->
+        </div>
+      </div>
+
+      <!-- Footer bottom -->
+      <div class="footer-bottom text-center">
+        <p class="mb-0">
+          © <span id="currentYear"></span> Anatolab3D — Todos los derechos reservados. 
+          Producto educacional. <br>
+          | Developed by Christian Vendramel Rebolo
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       BOTONES FLOTANTES (Back to Top + WhatsApp)
+       ========================================== -->
+  <div class="floating-buttons">
+    <!-- Botón volver arriba -->
+    <button class="btn-back-top" id="btnBackTop" aria-label="Volver arriba">
+      <i class="bi bi-chevron-up"></i>
+    </button>
+    <!-- Botón WhatsApp flotante -->
+    <button class="btn-float-whatsapp" id="btnFloatWhatsApp" aria-label="Contactar por WhatsApp">
+      <i class="bi bi-whatsapp"></i>
+    </button>
+  </div>
+
+  <!-- ==========================================
+       SCRIPTS
+       ========================================== -->
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
