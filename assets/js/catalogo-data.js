@@ -183,7 +183,7 @@ const CATALOGO_DATA = {
       id: 'costillas', name: 'Costillas', badge: 'Popular', category: 'Dorso',
       description: 'Set de costillas verdaderas, falsas y flotantes con cartílago costal.',
       price: 20000, stock: 2,
-      images: ['assets/images/costillas/costillas1.png', 'assets/images/costillas/costillas2.png', 'assets/images/costillas/costillas3.png', 'assets/images/costillas/costillas4.png', 'assets/images/costillas/costillas5.png',],
+      images: ['assets/images/costillas/costillas1.png', 'assets/images/costillas/costillas2.png', 'assets/images/costillas/costillas3.png', 'assets/images/costillas/costillas4.png', 'assets/images/costillas/costillas5.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa las Costillas 3D.'
     },
     // Dorso Esternón
