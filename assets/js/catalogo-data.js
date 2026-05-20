@@ -92,6 +92,8 @@ const CATALOGO_DATA = {
       images: ['assets/images/femur.png', 'assets/images/femur.png', 'assets/images/femur.png', 'assets/images/femur.png', 'assets/images/femur.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa el Peroné 3D.'
     },
+
+    // Sacro y Cóccix
     {
       id: 'rotula', name: 'Rótula (Patela)', badge: 'Nuevo', category: 'Miembro Inferior',
       description: 'Rótula con superficie articular posterior y bordes detallados.',
@@ -99,6 +101,8 @@ const CATALOGO_DATA = {
       images: ['assets/images/femur.png', 'assets/images/femur.png', 'assets/images/femur.png', 'assets/images/femur.png', 'assets/images/femur.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa la Rótula 3D.'
     },
+
+    // Sacro y Cóccix
     {
       id: 'pie-tarso', name: 'Pie (Huesos del Tarso)', badge: 'Premium', category: 'Miembro Inferior',
       description: 'Conjunto completo de huesos del tarso, metatarsianos y falanges.',
@@ -106,6 +110,8 @@ const CATALOGO_DATA = {
       images: ['assets/images/femur.png', 'assets/images/femur.png', 'assets/images/femur.png', 'assets/images/femur.png', 'assets/images/femur.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa el Pie 3D.'
     },
+
+    // Sacro y Cóccix
     {
       id: 'art-rodilla', name: 'Articulación de la Rodilla', badge: 'Top Venta', category: 'Miembro Inferior',
       description: 'Articulación completa con fémur distal, tibia proximal, rótula y meniscos.',
@@ -113,6 +119,8 @@ const CATALOGO_DATA = {
       images: ['assets/images/femur.png', 'assets/images/femur.png', 'assets/images/femur.png', 'assets/images/femur.png', 'assets/images/femur.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa la Articulación de la Rodilla 3D.'
     },
+
+    // Sacro y Cóccix
     {
       id: 'art-cadera', name: 'Articulación de la Cadera', badge: 'Popular', category: 'Miembro Inferior',
       description: 'Articulación coxofemoral con pelvis parcial y cabeza del fémur.',
@@ -121,96 +129,112 @@ const CATALOGO_DATA = {
       mpLink: '#', wpMsg: 'Hola! Me interesa la Articulación de la Cadera 3D.'
     }
   ],
+// RAQUIS: Cada segmento del raquis (cervical, torácico, lumbar, sacro-cóccix) con detalles anatómicos específicos. Material PLA+ resistente, ideal para estudio anatómico avanzado. Reemplazá las rutas placeholder por las fotos reales de cada pieza.
 
+//  Columna Cervical
   'raquis': [
     {
       id: 'col-cervical', name: 'Columna Cervical', badge: 'Popular', category: 'Raquis',
       description: 'Segmento cervical C1-C7 con atlas, axis y forámenes transversos detallados.',
       price: 15000, stock: 4,
-      images: ['assets/images/spine.png', 'assets/images/spine.png', 'assets/images/spine.png', 'assets/images/spine.png', 'assets/images/spine.png'],
+      images: ['assets/images/columna-cevical/cervical1.png', 'assets/images/columna-cevical/cervical2.png', 'assets/images/columna-cevical/cervical3.png', 'assets/images/columna-cevical/cervical4.png', 'assets/images/columna-cevical/cervical5.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa la Columna Cervical 3D.'
     },
+
+    //  Columna Torácica
     {
       id: 'col-toracica', name: 'Columna Torácica', badge: '', category: 'Raquis',
       description: 'Segmento torácico T1-T12 con carillas costales y procesos espinosos.',
       price: 18000, stock: 3,
-      images: ['assets/images/spine.png', 'assets/images/spine.png', 'assets/images/spine.png', 'assets/images/spine.png', 'assets/images/spine.png'],
+      images: ['assets/images/columna-toracica/toracica1.png', 'assets/images/columna-toracica/toracica2.png', 'assets/images/columna-toracica/toracica3.png', 'assets/images/columna-toracica/toracica4.png', 'assets/images/columna-toracica/toracica5.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa la Columna Torácica 3D.'
     },
+
+    //  Columna Lumbar
     {
       id: 'col-lumbar', name: 'Columna Lumbar', badge: 'Top Venta', category: 'Raquis',
       description: 'Segmento lumbar L1-L5 con cuerpos vertebrales robustos y discos visibles.',
       price: 16000, stock: 5,
-      images: ['assets/images/spine.png', 'assets/images/spine.png', 'assets/images/spine.png', 'assets/images/spine.png', 'assets/images/spine.png'],
+      images: ['assets/images/columna-lumbar/lumbar1.png', 'assets/images/columna-lumbar/lumbar2.png', 'assets/images/columna-lumbar/lumbar3.png', 'assets/images/columna-lumbar/lumbar4.png', 'assets/images/columna-lumbar/lumbar5.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa la Columna Lumbar 3D.'
     },
+
+    //  Sacro y Cóccix
     {
       id: 'sacro-coccix', name: 'Sacro y Cóccix', badge: 'Nuevo', category: 'Raquis',
       description: 'Sacro con forámenes sacros anteriores y posteriores. Incluye cóccix articulado.',
       price: 10000, stock: 6,
-      images: ['assets/images/spine.png', 'assets/images/spine.png', 'assets/images/spine.png', 'assets/images/spine.png', 'assets/images/spine.png'],
+      images: ['assets/images/columna-sacro-coccix/lumbar1.png', 'assets/images/columna-sacro-coccix/lumbar2.png', 'assets/images/columna-sacro-coccix/lumbar3.png', 'assets/images/columna-sacro-coccix/lumbar4.png', 'assets/images/columna-sacro-coccix/lumbar5.png', 'assets/images/columna-sacro-coccix/lumbar6.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa el Sacro y Cóccix 3D.'
     }
   ],
 
+  // Dorso Escápula con Músculos: Escápula con inserciones musculares pintadas del manguito rotador. Detalles de la fosa subescapular, espina y acromion. Material PLA+ resistente, ideal para estudio anatómico avanzado.
   'dorso': [
     {
       id: 'escapula-musculos', name: 'Escápula con Músculos', badge: 'Premium', category: 'Dorso',
       description: 'Escápula con inserciones musculares pintadas del manguito rotador.',
       price: 16000, stock: 3,
-      images: ['assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png'],
+      images: ['assets/images/escapula/escapula1.png', 'assets/images/escapula/escapula2.png', 'assets/images/escapula/escapula3.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa la Escápula con Músculos 3D.'
     },
+    // Dorso Costillas
     {
       id: 'costillas', name: 'Costillas', badge: 'Popular', category: 'Dorso',
       description: 'Set de costillas verdaderas, falsas y flotantes con cartílago costal.',
       price: 20000, stock: 2,
-      images: ['assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png'],
+      images: ['assets/images/costillas/costillas1.png', 'assets/images/costillas/costillas2.png', 'assets/images/costillas/costillas3.png', 'assets/images/costillas/costillas4.png', 'assets/images/costillas/costillas5.png',],
       mpLink: '#', wpMsg: 'Hola! Me interesa las Costillas 3D.'
     },
+    // Dorso Esternón
     {
       id: 'esternon', name: 'Esternón', badge: '', category: 'Dorso',
       description: 'Esternón con manubrio, cuerpo y apófisis xifoides. Detalle de escotaduras costales.',
       price: 8000, stock: 7,
-      images: ['assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png'],
+      images: ['assets/images/esternon/esternon1.png', 'assets/images/esternon/esternon2.png', 'assets/images/esternon/esternon3.png', 'assets/images/esternon/esternon4.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa el Esternón 3D.'
     },
+    // Dorso Caja Torácica Completa
     {
       id: 'caja-toracica', name: 'Caja Torácica Completa', badge: 'Top Venta', category: 'Dorso',
       description: 'Caja torácica completa con esternón, costillas y columna torácica ensamblados.',
       price: 35000, stock: 1,
-      images: ['assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png'],
+      images: ['assets/images/costillas/costillas1.png', 'assets/images/costillas/costillas2.png', 'assets/images/costillas/costillas3.png', 'assets/images/costillas/costillas4.png', 'assets/images/costillas/costillas5.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa la Caja Torácica Completa 3D.'
     }
   ],
 
+  // CRANEO: Cada producto tiene 5 imágenes detalladas del cráneo desde diferentes ángulos, mostrando suturas, forámenes y detalles óseos. Las imágenes deben resaltar la calidad de impresión y el nivel de detalle anatómico. Reemplazá las rutas placeholder por las fotos reales de cada pieza.
   'craneo': [
     {
       id: 'craneo-completo', name: 'Cráneo Completo', badge: 'Popular', category: 'Cráneo',
       description: 'Modelo detallado del cráneo humano adulto con suturas visibles. Calota removible.',
       price: 15000, stock: 5,
-      images: ['assets/images/cranio1.jpeg', 'assets/images/cranio2.jpeg', 'assets/images/cranio3.jpeg', 'assets/images/cranio4.jpeg', 'assets/images/cranio5.jpeg'],
+      images: ['assets/images/cranio/cranio1.png', 'assets/images/cranio/cranio2.png', 'assets/images/cranio/cranio3.png', 'assets/images/cranio/cranio4.png', 'assets/images/cranio/cranio5.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa el Cráneo Completo 3D.'
     },
+    // MANDIBULA
     {
       id: 'mandibula', name: 'Mandíbula', badge: 'Nuevo', category: 'Cráneo',
       description: 'Mandíbula con cóndilos, apófisis coronoides, foramen mentoniano y alvéolos dentarios.',
       price: 10000, stock: 6,
-      images: ['assets/images/skull.png', 'assets/images/skull.png', 'assets/images/skull.png', 'assets/images/skull.png', 'assets/images/skull.png'],
+      images: ['assets/images/mandibula/mandibula1.png', 'assets/images/mandibula/mandibula2.png', 'assets/images/mandibula/mandibula3.png', 'assets/images/mandibula/mandibula4.png', 'assets/images/mandibula/mandibula5.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa la Mandíbula 3D.'
     },
+    // BASE DO CRANEO
     {
       id: 'base-craneo', name: 'Base del Cráneo', badge: 'Premium', category: 'Cráneo',
       description: 'Base craneal con fosa anterior, media y posterior. Forámenes claramente marcados.',
       price: 18000, stock: 3,
-      images: ['assets/images/skull.png', 'assets/images/skull.png', 'assets/images/skull.png', 'assets/images/skull.png', 'assets/images/skull.png'],
+      images: ['assets/images/base-craneo/base1.png', 'assets/images/base-craneo/base2.png', 'assets/images/base-craneo/base3.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa la Base del Cráneo 3D.'
     },
+    // HUESO TEMPORAL
     {
       id: 'hueso-temporal', name: 'Hueso Temporal', badge: '', category: 'Cráneo',
       description: 'Hueso temporal con peñasco, mastoides y cavidad timpánica detallada.',
       price: 12000, stock: 4,
-      images: ['assets/images/skull.png', 'assets/images/skull.png', 'assets/images/skull.png', 'assets/images/skull.png', 'assets/images/skull.png'],
+      images: ['assets/images/hueso-temporal/hueso-temporal1.png', 'assets/images/hueso-temporal/hueso-temporal2.png', 'assets/images/hueso-temporal/hueso-temporal3.png', 'assets/images/hueso-temporal/hueso-temporal4.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa el Hueso Temporal 3D.'
     }
   ]
