@@ -10,6 +10,8 @@
  * Ejemplo: 'assets/images/catalogo/humero_1.jpg'
  */
 
+// Miembro Superior: Húmero, Radio, Ulna, Escápula, Clavícula, Mano (Huesos del Carpo), Articulación del Codo, Articulación del Hombro. Cada producto tiene 5 imágenes detalladas mostrando diferentes ángulos y características anatómicas. Material PLA+ resistente, ideal para estudio anatómico avanzado. Reemplazá las rutas placeholder por las fotos reales de cada pieza.
+// Húmero
 const CATALOGO_DATA = {
   'miembro-superior': [
     {
@@ -19,6 +21,8 @@ const CATALOGO_DATA = {
       images: ['assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa el Húmero 3D.'
     },
+
+    //  Radio
     {
       id: 'radio', name: 'Radio', badge: 'Nuevo', category: 'Miembro Superior',
       description: 'Réplica del radio con cabeza radial y apófisis estiloides. Material PLA+ de alta durabilidad.',
@@ -26,6 +30,8 @@ const CATALOGO_DATA = {
       images: ['assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa el Radio 3D.'
     },
+
+    //  Ulna (Cúbito)
     {
       id: 'ulna', name: 'Ulna (Cúbito)', badge: '', category: 'Miembro Superior',
       description: 'Ulna detallada con olécranon, apófisis coronoides y escotadura troclear.',
@@ -33,6 +39,8 @@ const CATALOGO_DATA = {
       images: ['assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa la Ulna 3D.'
     },
+
+    // Escápula
     {
       id: 'escapula', name: 'Escápula', badge: 'Popular', category: 'Miembro Superior',
       description: 'Escápula con fosa subescapular, espina y acromion claramente definidos.',
@@ -40,6 +48,8 @@ const CATALOGO_DATA = {
       images: ['assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa la Escápula 3D.'
     },
+
+    //  Clavícula
     {
       id: 'clavicula', name: 'Clavícula', badge: 'Nuevo', category: 'Miembro Superior',
       description: 'Réplica precisa de la clavícula humana con detalles de inserción muscular.',
@@ -47,6 +57,8 @@ const CATALOGO_DATA = {
       images: ['assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa la Clavícula 3D.'
     },
+
+    //  Mano (Huesos del Carpo)
     {
       id: 'mano-carpo', name: 'Mano (Huesos del Carpo)', badge: 'Premium', category: 'Miembro Superior',
       description: 'Conjunto de huesos del carpo, metacarpianos y falanges con detalle individual.',
@@ -54,6 +66,8 @@ const CATALOGO_DATA = {
       images: ['assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa la Mano 3D.'
     },
+
+    // Articulación del Codo
     {
       id: 'art-codo', name: 'Articulación del Codo', badge: '', category: 'Miembro Superior',
       description: 'Modelo articulado del codo con húmero distal, radio y ulna proximal.',
@@ -61,6 +75,8 @@ const CATALOGO_DATA = {
       images: ['assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png', 'assets/images/clavicle.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa la Articulación del Codo 3D.'
     },
+
+    //  Articulación del Hombro
     {
       id: 'art-hombro', name: 'Articulación del Hombro', badge: 'Top Venta', category: 'Miembro Superior',
       description: 'Articulación glenohumeral con clavícula, escápula y húmero proximal.',
@@ -70,6 +86,9 @@ const CATALOGO_DATA = {
     }
   ],
 
+  // Miembro Inferior , Tibia, Peroné (Fíbula), Rótula (Patela), Pie (Huesos del Tarso), Articulación de la Rodilla, Articulación de la Cadera. Cada producto tiene 5 imágenes detalladas mostrando diferentes ángulos y características anatómicas. Material PLA+ resistente, ideal para estudio anatómico avanzado. Reemplazá las rutas placeholder por las fotos reales de cada pieza. 
+
+  // Fémur
   'miembro-inferior': [
     {
       id: 'femur', name: 'Fémur', badge: 'Top Venta', category: 'Miembro Inferior',
@@ -78,6 +97,8 @@ const CATALOGO_DATA = {
       images: ['assets/images/femur.png', 'assets/images/femur.png', 'assets/images/femur.png', 'assets/images/femur.png', 'assets/images/femur.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa el Fémur 3D.'
     },
+
+    // Tibia
     {
       id: 'tibia', name: 'Tibia', badge: 'Popular', category: 'Miembro Inferior',
       description: 'Tibia con meseta tibial, maléolo medial y tuberosidad tibial detallados.',
@@ -85,6 +106,8 @@ const CATALOGO_DATA = {
       images: ['assets/images/femur.png', 'assets/images/femur.png', 'assets/images/femur.png', 'assets/images/femur.png', 'assets/images/femur.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa la Tibia 3D.'
     },
+
+    // Peroné (Fíbula)
     {
       id: 'perone', name: 'Peroné (Fíbula)', badge: '', category: 'Miembro Inferior',
       description: 'Peroné con cabeza, cuello y maléolo lateral. Material PLA+ resistente.',
@@ -93,7 +116,7 @@ const CATALOGO_DATA = {
       mpLink: '#', wpMsg: 'Hola! Me interesa el Peroné 3D.'
     },
 
-    // Sacro y Cóccix
+    // Rótula (Patela)
     {
       id: 'rotula', name: 'Rótula (Patela)', badge: 'Nuevo', category: 'Miembro Inferior',
       description: 'Rótula con superficie articular posterior y bordes detallados.',
@@ -102,7 +125,7 @@ const CATALOGO_DATA = {
       mpLink: '#', wpMsg: 'Hola! Me interesa la Rótula 3D.'
     },
 
-    // Sacro y Cóccix
+    // Pie (Huesos del Tarso)
     {
       id: 'pie-tarso', name: 'Pie (Huesos del Tarso)', badge: 'Premium', category: 'Miembro Inferior',
       description: 'Conjunto completo de huesos del tarso, metatarsianos y falanges.',
@@ -111,7 +134,7 @@ const CATALOGO_DATA = {
       mpLink: '#', wpMsg: 'Hola! Me interesa el Pie 3D.'
     },
 
-    // Sacro y Cóccix
+    // Articulación de la Rodilla
     {
       id: 'art-rodilla', name: 'Articulación de la Rodilla', badge: 'Top Venta', category: 'Miembro Inferior',
       description: 'Articulación completa con fémur distal, tibia proximal, rótula y meniscos.',
@@ -120,7 +143,7 @@ const CATALOGO_DATA = {
       mpLink: '#', wpMsg: 'Hola! Me interesa la Articulación de la Rodilla 3D.'
     },
 
-    // Sacro y Cóccix
+    // Articulación de la Cadera
     {
       id: 'art-cadera', name: 'Articulación de la Cadera', badge: 'Popular', category: 'Miembro Inferior',
       description: 'Articulación coxofemoral con pelvis parcial y cabeza del fémur.',
@@ -129,6 +152,7 @@ const CATALOGO_DATA = {
       mpLink: '#', wpMsg: 'Hola! Me interesa la Articulación de la Cadera 3D.'
     }
   ],
+  
 // RAQUIS: Cada segmento del raquis (cervical, torácico, lumbar, sacro-cóccix) con detalles anatómicos específicos. Material PLA+ resistente, ideal para estudio anatómico avanzado. Reemplazá las rutas placeholder por las fotos reales de cada pieza.
 
 //  Columna Cervical
