@@ -194,7 +194,7 @@ const CATALOGO_DATA = {
       images: ['assets/images/esternon/esternon1.png', 'assets/images/esternon/esternon2.png', 'assets/images/esternon/esternon3.png', 'assets/images/esternon/esternon4.png'],
       mpLink: '#', wpMsg: 'Hola! Me interesa el Esternón 3D.'
     },
-    // Dorso Caja Torácica Completa
+    // Dorso Caja Torácica Completa.
     {
       id: 'caja-toracica', name: 'Caja Torácica Completa', badge: 'Top Venta', category: 'Dorso',
       description: 'Caja torácica completa con esternón, costillas y columna torácica ensamblados.',
